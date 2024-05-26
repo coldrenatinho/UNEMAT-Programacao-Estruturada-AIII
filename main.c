@@ -8,15 +8,28 @@
 
 char relativepath[200];
 
+int 
+
+void bufferwite(){
+
+    printf("Digite o buffer de entrada:\n");
+    fgets()
+}
+
+void filew(char input0[400]){
+    FILE *fpointer = fopen(input0, "w");
+    if(fpointer == NULL){
+        printf("Erro opening file!");
+        return 1;
+    }
+    fprintf(fpointer, )
+}
+
 
 
 
 
 int main(int argc, char *argv[]){
-
-
-    printf(logo);
-
 
 
 }
