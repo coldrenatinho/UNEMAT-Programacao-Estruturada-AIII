@@ -4,26 +4,25 @@
 // UNEMAT (UNIVERSIDADE DO ESTADOR DO MATO GROSSO) - SINOP
 #define logo "██████╗ ██╗    ██╗ ██████╗ ██████╗ ██████╗         ███████╗██████╗ ██╗██████╗ \n██╔════╝ ██║    ██║██╔═══██╗██╔══██╗██╔══██╗        ██╔════╝██╔══██╗██║██╔══██╗\n██║█████╗██║ █╗ ██║██║   ██║██████╔╝██║  ██║        █████╗  ██║  ██║██║██║  ██║\n██║╚════╝██║███╗██║██║   ██║██╔══██╗██║  ██║        ██╔══╝  ██║  ██║██║██║  ██║\n╚██████╗ ╚███╔███╔╝╚██████╔╝██║  ██║██████╔╝███████╗███████╗██████╔╝██║██████╔╝\n╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚═════╝ ╚═╝╚═════╝\n"
 
-char relativepath[200];
+FILE *fptr;
 
-void bufferwite()
+void readlocalfile()
 {
 
-    printf("Digite o buffer de entrada:\n");
-    fgets();
-}
+    fptr = fopen("test.txt", "r");
 
-void filew(char input0[400])
-{
-    FILE *fpointer = fopen(input0, "w");
-    if (fpointer == NULL)
+    if (fptr != NULL)
     {
-        printf("Erro opening file!");
-        return 1;
+        printf("File Open Sucessful");
     }
-    fprintf(fpointer, )
+    else
+    {
+        printf("File Opne Unsuncessful");
+    }
 }
 
 int main(int argc, char *argv[])
 {
+    readlocalfile();
+    return 0;
 }
