@@ -2,11 +2,11 @@
 
 #define MAX_BUFFER 2000
 
-void readLocalFile()
+void readLocalFile(const char *filename)
 {
 
     FILE *fptr;
-    fptr = fopen("test.txt", "r"); // Substituir por init file
+    fptr = fopen(filename, "r"); // Substituir por init file
 
     char readBuffer[MAX_BUFFER];
 

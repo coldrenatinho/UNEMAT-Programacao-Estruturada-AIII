@@ -6,6 +6,8 @@
 #include "writeLocalFile.c"
 #include "bufferUserString.c"
 #include "colorSchema.c"
+#include "autors.c"
+#include "helpC_Edit.c"
 
 // PROGRAMS INFO'
 #define logo "██████╗ ██╗    ██╗ ██████╗ ██████╗ ██████╗         ███████╗██████╗ ██╗██████╗ \n██╔════╝ ██║    ██║██╔═══██╗██╔══██╗██╔══██╗        ██╔════╝██╔══██╗██║██╔══██╗\n██║█████╗██║ █╗ ██║██║   ██║██████╔╝██║  ██║        █████╗  ██║  ██║██║██║  ██║\n██║╚════╝██║███╗██║██║   ██║██╔══██╗██║  ██║        ██╔══╝  ██║  ██║██║██║  ██║\n╚██████╗ ╚███╔███╔╝╚██████╔╝██║  ██║██████╔╝███████╗███████╗██████╔╝██║██████╔╝\n╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚═════╝ ╚═╝╚═════╝\n"
@@ -16,16 +18,19 @@
 #define MAX_BUFFER 2000
 
 // init File
-char *initFile();
+void *initFile(int option);
 
 // whire Local File
-void writeLocalFile();
+void writeLocalFile(const char *filemane);
 
-// reald Local File
-void writeLocalFile();
+// read a local File
+void readLocalFile(const char *filename);
 
 // Buffer User String
 char *bufferUserString();
+
+// Autors
+void aboutAutos();
 
 // Color Scherma
 void printRed(const char *text);

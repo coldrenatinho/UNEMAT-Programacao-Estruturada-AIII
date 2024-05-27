@@ -2,7 +2,7 @@
 
 #define MAX_FILE_NAME 200
 
-char *initFile()
+void *initFile(int option)
 {
 
     char nameFile[MAX_FILE_NAME];
@@ -16,8 +16,7 @@ char *initFile()
 
         if (nameFile[0] == '\n')
         {
-            printf(printRed("The name of file is empit!!!\n"));
-            // printf(ANSI_COLOR_RESET);
+            printRed("The name of file is empit!!!\n");
         }
         else
         {
@@ -27,7 +26,18 @@ char *initFile()
     } while (checkFile[0] != 'y' && checkFile[0] != 'Y');
 
     strcat(nameFile, ".txt");
-    // puts(nameFile);
 
-    return nameFile;
+    switch (option)
+    {
+
+    case 1:
+        writeLocalFile(nameFile);
+        break;
+    case 2:
+        readLocalFile(nameFile);
+        break;
+
+    default:
+        break;
+    }
 }
