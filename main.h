@@ -1,6 +1,12 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+// Bibliotecas padrao do C
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Local files
 #include "initFile.c"
 #include "readLocalFile.c"
 #include "writeLocalFile.c"
@@ -10,11 +16,9 @@
 
 // PROGRAMS INFO'
 #define logo "██████╗ ██╗    ██╗ ██████╗ ██████╗ ██████╗         ███████╗██████╗ ██╗██████╗ \n██╔════╝ ██║    ██║██╔═══██╗██╔══██╗██╔══██╗        ██╔════╝██╔══██╗██║██╔══██╗\n██║█████╗██║ █╗ ██║██║   ██║██████╔╝██║  ██║        █████╗  ██║  ██║██║██║  ██║\n██║╚════╝██║███╗██║██║   ██║██╔══██╗██║  ██║        ██╔══╝  ██║  ██║██║██║  ██║\n╚██████╗ ╚███╔███╔╝╚██████╔╝██║  ██║██████╔╝███████╗███████╗██████╔╝██║██████╔╝\n╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚═════╝ ╚═╝╚═════╝\n"
-#define version "1.0.0"
+#define version "1.0.2"
 #define autors "Renato A.S, Dyeni & Rosi"
 #define github "github.com/coldrenatinho/UNEMAT-Programacao-Estruturada-AIII"
-
-#define MAX_BUFFER 2000
 
 // init File
 void *initFile(int option);
@@ -24,9 +28,6 @@ void writeLocalFile(const char *filemane);
 
 // read a local File
 void readLocalFile(const char *filename);
-
-// Buffer User String
-char *bufferUserString();
 
 // Autors
 void aboutAutos();

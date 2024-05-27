@@ -1,20 +1,17 @@
 // UNEMAT (UNIVERSIDADE DO ESTADOR DO MATO GROSSO) - SINOP
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 #include "main.h"
 
 #define MAX_TRY_CHACH 3
 
 int main(int argc, char *argv[])
 {
-    printBlue(logo);
-    printf("--%s------------------------------------------%s------\n##%s#################\n\n", autors, version, github);
-
-    int initChoise;
-    int tryChach = 0;
-    do
+    while (1 == 1)
     {
+        printBlue(logo);
+        printf("--%s------------------------------------------%s------\n##%s#################\n\n", autors, version, github);
+
+        int initChoise = 0;
+        int tryChach = 0;
 
         if (tryChach == MAX_TRY_CHACH)
         {
@@ -29,17 +26,15 @@ int main(int argc, char *argv[])
                "[5] - Quiet\n");
 
         sleep(2);
-        scanf("%d", &initChoise);
-
-        if (initChoise <= 0 || initChoise > 5)
-        {
-            printRed("\n\nChoise a option\n");
-        }
+        scanf(" %d", &initChoise);
+        fflush(stdin);
+        printf("\n\n%d", initChoise);
 
         switch (initChoise)
         {
         case 1:
             initFile(1);
+            // return 0;
             break;
         case 2:
             initFile(2);
@@ -54,14 +49,18 @@ int main(int argc, char *argv[])
             break;
 
         case 5:
-            printGreen("Aplicacao finalizada com sucesso!\n");
+            printGreen("-----------Aplicacao finalizada com sucesso!-----------\n");
             return 201; // User aplication Close
             break;
+
+        case 0:
+            printRed("\n\n\nOUT BREAK");
+            return 0;
 
         default:
             break;
         }
-    } while (initChoise != 5 && tryChach <= MAX_TRY_CHACH);
 
-    return 0;
+        // return 0;
+    }
 }

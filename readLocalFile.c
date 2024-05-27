@@ -1,18 +1,18 @@
 #include "main.h"
 
-#define MAX_BUFFER 2000
+#define MAX_BUFFER_READ 2000
 void readLocalFile(const char *filename)
 {
     FILE *fptr;
     fptr = fopen(filename, "r");
-    char readBuffer[MAX_BUFFER] = {};
+    char readBuffer[MAX_BUFFER_READ] = {};
 
     fflush(fptr);
 
     if (fptr != NULL)
     {
-        printGreen("File Open Sucessfull\n");
-        while (fgets(readBuffer, MAX_BUFFER, fptr))
+        printGreen("----------------------File Open Sucessfull----------------------\n");
+        while (fgets(readBuffer, MAX_BUFFER_READ, fptr))
         {
             printf("%s", readBuffer);
         }
