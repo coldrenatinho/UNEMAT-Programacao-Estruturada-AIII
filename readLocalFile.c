@@ -12,7 +12,7 @@ void readLocalFile()
 
     if (fptr != NULL)
     {
-        printf("File Open Sucessfull\n");
+        printGreen("File Open Sucessfull\n");
         while (fgets(readBuffer, MAX_BUFFER, fptr))
         {
 
@@ -21,8 +21,7 @@ void readLocalFile()
     }
     else
     {
-        printf(printGreen("File Oen Unsuncessful"));
-        // printf(ANSI_COLOR_RESET);
+        printBlue("File Oen Unsuncessful");
     }
 
     fclose(fptr);

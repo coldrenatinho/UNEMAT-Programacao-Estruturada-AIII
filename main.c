@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-    puts(logo);
+    printBlue(logo);
     printf("--%s------------------------------------------%s------\n##%s#################\n\n", autors, version, github);
 
     initFile();
