@@ -5,6 +5,8 @@
 
 int main(int argc, char *argv[])
 {
+    setlocale(LC_ALL, "Portuguese");
+    
     while (1 == 1)
     {
         printBlue(logo);
