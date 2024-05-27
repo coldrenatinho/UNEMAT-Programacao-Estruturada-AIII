@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
         sleep(2);
         scanf("%d", &initChoise);
 
-        if (initChoise <= 0 | initChoise > 5)
+        if (initChoise <= 0 || initChoise > 5)
         {
             printRed("\n\nChoise a option\n");
         }

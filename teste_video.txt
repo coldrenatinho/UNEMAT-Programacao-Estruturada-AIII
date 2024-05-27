@@ -1,0 +1,2 @@
+Esse arquivo foi escrito no C-word_Edid
+seguda linha para testar
