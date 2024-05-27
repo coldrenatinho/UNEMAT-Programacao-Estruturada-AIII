@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
     int tryChach = 0;
     do
     {
-        initChoise = 0;
 
         if (tryChach == MAX_TRY_CHACH)
         {
@@ -29,12 +28,12 @@ int main(int argc, char *argv[])
                "[4] - Autor's\n"
                "[5] - Quiet\n");
 
+        sleep(2);
         scanf("%d", &initChoise);
 
         if (initChoise <= 0 | initChoise > 5)
         {
             printRed("\n\nChoise a option\n");
-            ++tryChach;
         }
 
         switch (initChoise)
@@ -62,12 +61,7 @@ int main(int argc, char *argv[])
         default:
             break;
         }
-
-        ++tryChach;
     } while (initChoise != 5 && tryChach <= MAX_TRY_CHACH);
-
-    // writeLocalFile();
-    // readLocalFile();
 
     return 0;
 }

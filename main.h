@@ -4,14 +4,13 @@
 #include "initFile.c"
 #include "readLocalFile.c"
 #include "writeLocalFile.c"
-#include "bufferUserString.c"
 #include "colorSchema.c"
 #include "autors.c"
 #include "helpC_Edit.c"
 
 // PROGRAMS INFO'
 #define logo "██████╗ ██╗    ██╗ ██████╗ ██████╗ ██████╗         ███████╗██████╗ ██╗██████╗ \n██╔════╝ ██║    ██║██╔═══██╗██╔══██╗██╔══██╗        ██╔════╝██╔══██╗██║██╔══██╗\n██║█████╗██║ █╗ ██║██║   ██║██████╔╝██║  ██║        █████╗  ██║  ██║██║██║  ██║\n██║╚════╝██║███╗██║██║   ██║██╔══██╗██║  ██║        ██╔══╝  ██║  ██║██║██║  ██║\n╚██████╗ ╚███╔███╔╝╚██████╔╝██║  ██║██████╔╝███████╗███████╗██████╔╝██║██████╔╝\n╚═════╝  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚═════╝ ╚═╝╚═════╝\n"
-#define version "0.1.2"
+#define version "1.0.0"
 #define autors "Renato A.S, Dyeni & Rosi"
 #define github "github.com/coldrenatinho/UNEMAT-Programacao-Estruturada-AIII"
 

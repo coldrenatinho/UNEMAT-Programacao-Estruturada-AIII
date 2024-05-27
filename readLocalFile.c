@@ -17,12 +17,12 @@ void readLocalFile(const char *filename)
         {
 
             printf("%s", readBuffer);
+            fclose(fptr);
         }
     }
     else
     {
-        printBlue("File Oen Unsuncessful");
+        printRed("File Open Unsuncessful\n");
+        return 301; // Falhar de IO
     }
-
-    fclose(fptr);
 }
